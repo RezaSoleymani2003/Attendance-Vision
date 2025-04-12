@@ -10,8 +10,16 @@ To automate this repetitive task, I built **Attendance Vision** — a computer v
 
 
 ## Input
-the input of CNN is a 128 by 4096 image of a column that is an attendance of a session:
+The input to the CNN is a 128x4096 image of a column containing attendance checkboxes:
 
+<p align="center">
+  <figure>
+    <img src="https://github.com/user-attachments/assets/720de306-af1f-4197-99b6-4cf9680d60e5" width="200"/>
+    <figcaption>Image 1: Raw Attendance Column</figcaption>
+  </figure>
+  <figure>
+    <img src="https://github.com/user-attachments/assets/f62f871a-ac5b-49f6-a116-59f781e8d061" width="200"/>
+    <figcaption>Image 2: Preprocessed Sample</figcaption>
+  </figure>
+</p>
 
-![final2](https://github.com/user-attachments/assets/720de306-af1f-4197-99b6-4cf9680d60e5)
-![test16](https://github.com/user-attachments/assets/f62f871a-ac5b-49f6-a116-59f781e8d061)
