@@ -9,7 +9,7 @@ To automate this repetitive task, I built **Attendance Vision** — a computer v
 ## Requirements
 
 
-## Input
+## Input And Output
 The input to the CNN is a 128x4096 image of a column containing attendance checkboxes:
 
 
@@ -34,5 +34,7 @@ The input to the CNN is a 128x4096 image of a column containing attendance check
   </tr>
 </table>
 
+I give an image like these to the model, then it cuts the image to different checkboxes (using fixed height segments) and classifies each one. Then enters the attendance to the google sheet i provided.I also need to specify the start cell.
 
-
+## The Model
+As mentioned, I use a CNN 
