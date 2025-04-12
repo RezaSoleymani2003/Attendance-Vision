@@ -24,11 +24,11 @@ The input to the CNN is a 128x4096 image of a column containing attendance check
       <sub>Image 2: Preprocessed Sample</sub>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/fb573c70-7a96-41d0-87d4-f263e5c4efe2" width="200"/><br/>
+      <img src="https://github.com/user-attachments/assets/fb573c70-7a96-41d0-87d4-f263e5c4efe2" width="20"/><br/>
       <sub>Image 3: Augmented Image</sub>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/e110d772-e99f-491c-99ef-7a8005da1a51" width="200"/><br/>
+      <img src="https://github.com/user-attachments/assets/e110d772-e99f-491c-99ef-7a8005da1a51" width="20"/><br/>
       <sub>Image 4: Model Training Sample</sub>
     </td>
   </tr>
