@@ -79,6 +79,11 @@ In the output folder, I included some images that aren’t part of the training 
 
 To allow writing, I created a Google **Service Account** and added it as an **editor** to the sheet. The start cell can be specified.
 
+Here's the bot :
+
+![bot](https://github.com/user-attachments/assets/17acf7f5-40a7-4410-b1ba-880140d2c4b0)
+
+
 ## Demo
 
 As seen below, I used 2 images — `final3` and `final4`.  
