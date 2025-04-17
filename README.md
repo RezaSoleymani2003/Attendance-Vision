@@ -52,7 +52,7 @@ This is my model's architecture:
 
 I trained it for **10 epochs** and train data of **902** checkbox images and test data of **181** images.
 
-I experimented with different architecrures and traind data, this was my best result. I saved it as final_model.h5. The were some other good models that I saved on the project folder.
+I experimented with different architecrures and traind data, this was my best result. I saved it as **the_last_model.h5**. The were some other good models that I also saved on the project folder.
 
 ## Accuracy And Generalization
 Although the model shows signs of overfitting, it still performs well in real use cases. This is largely because both the training data and real-world input follow the same consistent format. The model is designed for this specific task. So in general ot works good in this problem.
@@ -62,3 +62,15 @@ In the output folder, I created some new images that are not in the train and te
 To do that, a google **Service Account** was created and added as an **editor** to the attendance sheet.
 The model writes predictions directly to the sheet using the **Google Sheets API**.
 Start cell is specified for where attendance should be written.
+
+## Demo
+As seen below, I gave my model 2 images : final3 and final4. First it cuts the images to checkboxes and saves them in the output folder. 
+Then it predicts each checkbox and saves the checkd ones in output-checkfolder and the unchecked ones in output-uncheckfolder. In this example, one of the checked boxes is misclassified as unchecked.
+Then the model writes the attendance on a google sheet page called Sample Attendance. I specfied W2 as the starting cell.
+
+
+
+
+https://github.com/user-attachments/assets/9e3eefbe-7fdc-49de-a614-c4239eef0ce3
+
+
