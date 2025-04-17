@@ -4,7 +4,7 @@
 
 For one of my college classes, I was responsible for taking student attendance using a printed checklist sheet, then manually entering the data into a Google Sheet for the professor.
 
-To automate this, I built **Attendance Vision** — a computer vision tool powered by a **Convolutional Neural Network (CNN)**. It takes an image of an attendance column, detects which checkboxes are marked, and automatically writes the results to a Google Sheet.
+Inspired by this, I built **Attendance Vision** — a computer vision model powered by a **Convolutional Neural Network (CNN)**. It takes an image of an attendance column, detects which checkboxes are marked, and automatically writes the results to a Google Sheet.
 
 It has an accuracy of about **95%** on test data and generallizes good.
 In some cases, the model misclassifies even clearly marked checkboxes. This usually happens with checkboxes that differ significantly in style, size, or alignment compared to those in the training set. Improving this would require more diverse training data or additional preprocessing.
@@ -19,19 +19,19 @@ The input to the CNN is a 128x4096 image of a column containing attendance check
   <tr>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/720de306-af1f-4197-99b6-4cf9680d60e5" width="90"/><br/>
-      <sub>Image 1: Raw Attendance Column</sub>
+      <sub>Sample Input 1</sub>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/f62f871a-ac5b-49f6-a116-59f781e8d061" width="90"/><br/>
-      <sub>Image 2: Preprocessed Sample</sub>
+      <sub>Sample Input 2</sub>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/fb573c70-7a96-41d0-87d4-f263e5c4efe2" width="90"/><br/>
-      <sub>Image 3: Augmented Image</sub>
+      <sub>Sample Input 3</sub>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/ba46250f-cf43-4051-ab2e-d1b1f62d4e2d" width="90"/><br/>
-      <sub>Image 4: Model Training Sample</sub>
+      <sub>Sample Input 4</sub>
     </td>
   </tr>
 </table>
@@ -68,9 +68,22 @@ As seen below, I gave my model 2 images : final3 and final4. First it cuts the i
 Then it predicts each checkbox and saves the checkd ones in output-checkfolder and the unchecked ones in output-uncheckfolder. In this example, one of the checked boxes is misclassified as unchecked.
 Then the model writes the attendance on a google sheet page called Sample Attendance. I specfied W2 as the starting cell.
 
-
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/1852b7ea-b094-4bc5-a46a-3346ade5ce38" width="90"/><br/>
+      <sub>final4</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/9013a07a-a72a-467c-8531-7c447b8cd9e1" width="90"/><br/>
+      <sub>final3</sub>
+    </td>
+  </tr>
+</table>
 
 
 https://github.com/user-attachments/assets/9e3eefbe-7fdc-49de-a614-c4239eef0ce3
 
+
+Here's the [link](https://docs.google.com/spreadsheets/d/1M-Neh3nGHSXbEVnhWBz5aAZYTcTsWpbCQ3SmS0fH-XU/edit?gid=0#gid=0)
 
