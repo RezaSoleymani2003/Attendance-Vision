@@ -46,14 +46,19 @@ I also had to augment some images based on the original images, because I didn't
 ## The Model
 Initially, I experimented with a normal neural network (MLP), but it didn't yeild good results. Switching to a Convolutional Neural Network (CNN) significantly improved the accuracy.
 This is my model's architecture: 
-![model_architecture](https://github.com/user-attachments/assets/84074430-4ed5-4f34-994a-03369be34734)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a1d976df-b8ed-4d52-8d9c-5f376980b248" alt="the_last_model_architecture">
+</p>
 
 I trained it for 16 epochs and train data of 902 checkbox images and test data of 181 images.
 
 I experimented with different architecrures and traind data, this was my best result. I saved it as final_model.h5. The were some other good models that I saved on the project folder.
 
 ## Accuracy And Generalization
-Although the model shows signs of overfitting (with very high training accuracy), it still performs well in real use cases. This is largely because both the training data and real-world input follow the same consistent format. The model is designed for this specific task. So in general ot works good in this problem.
+Although the model shows signs of overfitting, it still performs well in real use cases. This is largely because both the training data and real-world input follow the same consistent format. The model is designed for this specific task. So in general ot works good in this problem.
 
 ## Using The Model
 In the output folder, I created some new images that are not in the train and test data. The model predicts each checkbox and copies each one in the appropriate folder. Then it writes the attendence in a google sheet.
+To do that, a google **Service Account** was created and added as an **editor** to the attendance sheet.
+The model writes predictions directly to the sheet using the **Google Sheets API**.
+Start cell is specified for where attendance should be written.
